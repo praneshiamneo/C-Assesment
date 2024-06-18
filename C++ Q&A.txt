@@ -1,5 +1,5 @@
 C++ Internal Training Assessment:
-Basic Classwork Module:
+Basics_Classwork Module:
 1) Write a program to print the ASCII value of a character
 
 #include<iostream>
@@ -61,4 +61,86 @@ int main()
     char user[68],password[78];
     cin>>user>>password;
     cout<<user<<"\t"<<password;
+}
+
+Operators_Classwork Module:
+1) Average Calculation
+A teacher wants to compute the average of 5 students in her class. Write a program to help her to find the average. The average is the sum of all the numbers, then divided by the total numbers.
+
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float a,b,c,d,e;
+    cin>>a>>b>>c>>d>>e;
+    cout<<fixed<<setprecision(2)<<(a+b+c+d+e)/5;
+}
+
+2) Ternary Operator﻿
+The conditional operator is also known as the ternary operator [exp? true: false] can be used to make an either-or choice. Write a program to get a number from the user and find out whether it is odd or even.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    cout<<((a%2==0)?"Even":"Odd");
+}
+
+3) Evaluation of expression:
+Sasikumar is a mathematics teacher and he is preparing a question paper of his own, So he needs to calculate the answers to the questions he prepared without any errors. As he is busy with his work he has no time to make it.
+Write the program and trace the output for the following expressions:
+a) x = a + b * 5 / 4 + c % 3 * 5, where a, b and c are variables ( inputs ).
+b) y = u >v ? u : v ; where u and v are variables ( inputs ).
+c) z = ++i&& ++j && ++k; where i, j, and k are variables ( inputs ).
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,u,v,i,j,k,x,y,z;
+    cin>>a>>b>>c>>u>>v>>i>>j>>k;
+    x=a+b*5/4+c%3*5;
+    y=(u>v)?u:v;
+    z=++i&&++j&&++k;
+    cout<<"x = "<<x<<"\ny = "<<y<<"\nz = "<<z;
+    
+}
+
+4) MILEAGE REMUNERATION CALCULATOR
+Write a program that calculates mileage remuneration for a salesperson at a rate of Rs.25 per mile. Your program should interact with the user in this manner:
+Sample Output 1: (Explanation)
+Enter beginning odometer reading: 13505.2
+Enter ending odometer reading: 13810.6
+You traveled 305.4 miles. At Rs.25 per mile, your remuneration is Rs.7635
+Note: Display the output to two decimal places and round the remuneration value.
+
+#include <iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    float beg,end,km,rem;
+    cin>>beg>>end;
+    km=end-beg;
+    rem=km*25;
+    cout<<fixed<<setprecision(2)<<km<<" "<<round(rem);
+}
+
+5) Seetha, a newly joined maths teacher explained percentage concept in her class. She asked the student to calculate their attendance percentage based on the number of working days and the number of days the student is present. She asked the student to calculate the attendance percentage with decimal places truncated. (Ex. 75.89% as 75%)
+Help students to calculate the attendance percentage.
+Note : Display the output with % symbol
+
+#include <iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    float wd,dp,pct;
+    cin>>wd>>dp;
+    pct=(dp/wd)*100;
+    cout<<trunc(pct)<<"%";
 }
