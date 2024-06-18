@@ -1,0 +1,63 @@
+C++ Internal Training Assessment:
+1) Write a program to print the ASCII value of a character
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char a;
+    int b;
+    cin>>a;
+    b=a;
+    cout<<b;
+    return 0;
+}
+
+2) Write a program to multiply two integers
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    cout<<a*b;
+    return 0;
+
+}
+
+3) Write a program that accepts two integers as input and prints their sum.
+#include<iostream>
+using namespace std;
+int main()
+{ 
+    int a,b;
+    cin>>a>>b;
+    cout<<a+b;
+    return 0;
+}
+
+4) Customized Welcome Message
+Nikhil, the founder of “Pine Tree” company wished to design an Event Management System that would let its Customers plan and host events seamlessly via an online platform.
+As a part of this requirement, Nikhil wanted to write a piece of code for his company’s Examly Event Management System that will display customized welcome messages by taking Customers’ name as input. Help Nikhil on the task.
+
+#include <iostream> 
+using namespace std;
+int main()
+{
+    char name[50];
+    cin>>name;
+    cout<<"Hello "<<name<<"! Welcome to Examly Event Management System";
+    return 0;
+}
+
+5) Write a program that accepts a user name and password as input and prints the same.
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    char user[68],password[78];
+    cin>>user>>password;
+    cout<<user<<"\t"<<password;
+}
